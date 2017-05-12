@@ -7,23 +7,23 @@
 
       <mt-tab-item id="home">
         <img slot="icon" src="./assets/100x100.png">
-        首页
+        <router-link to="/">首页</router-link>
       </mt-tab-item>
       <mt-tab-item id="purSale">
         <img slot="icon" src="./assets/100x100.png">
-        购销
+        <router-link to="/purWarehs">购进</router-link>
       </mt-tab-item>
       <mt-tab-item id="invt">
         <img slot="icon" src="./assets/100x100.png">
-        库存
+        <router-link to="/saleIssue">销售</router-link>
       </mt-tab-item>
       <mt-tab-item id="stat">
         <img slot="icon" src="./assets/100x100.png">
-        统计
+        <router-link to="/inventory">库存</router-link>
       </mt-tab-item>
       <mt-tab-item id="me">
         <img slot="icon" src="./assets/100x100.png">
-        我的
+        <router-link to="/profile">我的</router-link>
       </mt-tab-item>
     </mt-tabbar>
   </div>
