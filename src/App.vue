@@ -1,7 +1,31 @@
 <template>
   <div id="app">
-    <img src="./assets/logo.png">
+
     <router-view></router-view>
+    <!--<router-link to="/Home"></router-link>-->
+    <mt-tabbar>
+
+      <mt-tab-item id="home">
+        <img slot="icon" src="./assets/100x100.png">
+        首页
+      </mt-tab-item>
+      <mt-tab-item id="purSale">
+        <img slot="icon" src="./assets/100x100.png">
+        购销
+      </mt-tab-item>
+      <mt-tab-item id="invt">
+        <img slot="icon" src="./assets/100x100.png">
+        库存
+      </mt-tab-item>
+      <mt-tab-item id="stat">
+        <img slot="icon" src="./assets/100x100.png">
+        统计
+      </mt-tab-item>
+      <mt-tab-item id="me">
+        <img slot="icon" src="./assets/100x100.png">
+        我的
+      </mt-tab-item>
+    </mt-tabbar>
   </div>
 </template>
 
@@ -12,12 +36,5 @@ export default {
 </script>
 
 <style>
-#app {
-  font-family: 'Avenir', Helvetica, Arial, sans-serif;
-  -webkit-font-smoothing: antialiased;
-  -moz-osx-font-smoothing: grayscale;
-  text-align: center;
-  color: #2c3e50;
-  margin-top: 60px;
-}
+
 </style>
